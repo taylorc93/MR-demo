@@ -13,6 +13,9 @@
 		BEEE0ED61ACA5FAD00289F49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEE0ED51ACA5FAD00289F49 /* Images.xcassets */; };
 		BEEE0ED91ACA5FAD00289F49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEE0ED71ACA5FAD00289F49 /* LaunchScreen.xib */; };
 		BEEE0EE51ACA5FAD00289F49 /* MagicalRecordDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE0EE41ACA5FAD00289F49 /* MagicalRecordDemoTests.swift */; };
+		BEEE0EF41ACB2EA300289F49 /* MagicalRecordDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEEE0EF21ACB2EA300289F49 /* MagicalRecordDemo.xcdatamodeld */; };
+		BEEE0EF61ACB2ED600289F49 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE0EF51ACB2ED600289F49 /* Foo.swift */; };
+		D9314ACDEAAB5990E291BF94 /* libPods-MagicalRecordDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFB585C569FFA7C7CE68C95 /* libPods-MagicalRecordDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AFB585C569FFA7C7CE68C95 /* libPods-MagicalRecordDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicalRecordDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3162013AEBC47BA8D40F3FC /* Pods-MagicalRecordDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicalRecordDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicalRecordDemo/Pods-MagicalRecordDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BEEE0EC91ACA5FAD00289F49 /* MagicalRecordDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicalRecordDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEE0ECD1ACA5FAD00289F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEEE0ECE1ACA5FAD00289F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,10 @@
 		BEEE0EDE1ACA5FAD00289F49 /* MagicalRecordDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicalRecordDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEE0EE31ACA5FAD00289F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEEE0EE41ACA5FAD00289F49 /* MagicalRecordDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalRecordDemoTests.swift; sourceTree = "<group>"; };
+		BEEE0EEE1ACA61B400289F49 /* MagicalRecordDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicalRecordDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		BEEE0EF31ACB2EA300289F49 /* MagicalRecordDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicalRecordDemo.xcdatamodel; sourceTree = "<group>"; };
+		BEEE0EF51ACB2ED600289F49 /* Foo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
+		D74BAD59CBA4410DBE919EC4 /* Pods-MagicalRecordDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicalRecordDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicalRecordDemo/Pods-MagicalRecordDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9314ACDEAAB5990E291BF94 /* libPods-MagicalRecordDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +66,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B19ED44B26D40099AC53178 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D74BAD59CBA4410DBE919EC4 /* Pods-MagicalRecordDemo.debug.xcconfig */,
+				A3162013AEBC47BA8D40F3FC /* Pods-MagicalRecordDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BEEE0EC01ACA5FAD00289F49 = {
 			isa = PBXGroup;
 			children = (
 				BEEE0ECB1ACA5FAD00289F49 /* MagicalRecordDemo */,
 				BEEE0EE11ACA5FAD00289F49 /* MagicalRecordDemoTests */,
 				BEEE0ECA1ACA5FAD00289F49 /* Products */,
+				9B19ED44B26D40099AC53178 /* Pods */,
+				FF6493595B3449F85ED3E778 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +104,9 @@
 				BEEE0ED51ACA5FAD00289F49 /* Images.xcassets */,
 				BEEE0ED71ACA5FAD00289F49 /* LaunchScreen.xib */,
 				BEEE0ECC1ACA5FAD00289F49 /* Supporting Files */,
+				BEEE0EEE1ACA61B400289F49 /* MagicalRecordDemo-Bridging-Header.h */,
+				BEEE0EF21ACB2EA300289F49 /* MagicalRecordDemo.xcdatamodeld */,
+				BEEE0EF51ACB2ED600289F49 /* Foo.swift */,
 			);
 			path = MagicalRecordDemo;
 			sourceTree = "<group>";
@@ -112,6 +136,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FF6493595B3449F85ED3E778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AFB585C569FFA7C7CE68C95 /* libPods-MagicalRecordDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEEE0EE81ACA5FAD00289F49 /* Build configuration list for PBXNativeTarget "MagicalRecordDemo" */;
 			buildPhases = (
+				9769C0BC40F38FF810E09BBD /* Check Pods Manifest.lock */,
 				BEEE0EC51ACA5FAD00289F49 /* Sources */,
 				BEEE0EC61ACA5FAD00289F49 /* Frameworks */,
 				BEEE0EC71ACA5FAD00289F49 /* Resources */,
+				0B8CAEF6775DCC346797B4B9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +241,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B8CAEF6775DCC346797B4B9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MagicalRecordDemo/Pods-MagicalRecordDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9769C0BC40F38FF810E09BBD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEEE0EC51ACA5FAD00289F49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEE0EF61ACB2ED600289F49 /* Foo.swift in Sources */,
 				BEEE0ED11ACA5FAD00289F49 /* ViewController.swift in Sources */,
 				BEEE0ECF1ACA5FAD00289F49 /* AppDelegate.swift in Sources */,
+				BEEE0EF41ACB2EA300289F49 /* MagicalRecordDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,21 +405,28 @@
 		};
 		BEEE0EE91ACA5FAD00289F49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74BAD59CBA4410DBE919EC4 /* Pods-MagicalRecordDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MagicalRecordDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MagicalRecordDemo/MagicalRecordDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BEEE0EEA1ACA5FAD00289F49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3162013AEBC47BA8D40F3FC /* Pods-MagicalRecordDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MagicalRecordDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MagicalRecordDemo/MagicalRecordDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +483,7 @@
 				BEEE0EEA1ACA5FAD00289F49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEEE0EEB1ACA5FAD00289F49 /* Build configuration list for PBXNativeTarget "MagicalRecordDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -415,8 +492,22 @@
 				BEEE0EED1ACA5FAD00289F49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEEE0EF21ACB2EA300289F49 /* MagicalRecordDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEEE0EF31ACB2EA300289F49 /* MagicalRecordDemo.xcdatamodel */,
+			);
+			currentVersion = BEEE0EF31ACB2EA300289F49 /* MagicalRecordDemo.xcdatamodel */;
+			path = MagicalRecordDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BEEE0EC11ACA5FAD00289F49 /* Project object */;
 }
